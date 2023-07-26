@@ -1,0 +1,20 @@
+charge = int(input())
+if charge<=199:
+    bill = charge*1.20
+elif charge>=200 and charge<400:
+    bill = charge*1.40
+elif charge>=400 and charge<600:
+    bill = charge*1.60
+elif charge>=600 and charge<800:
+    bill = charge*1.80
+else:
+    bill = charge*2.00
+print("Units Consumed: {}".format(charge))
+print("Cost per Unit: {:.2f}".format(bill/charge))
+print("Bill: {:.2f}".format(bill))
+if bill>=400:
+    surcharge = 0.15*bill
+else:
+    surcharge = 0.0
+print("Surcharge: {:.2f}".format(surcharge))
+print("Total Amount: {:.2f}".format(bill+surcharge))
