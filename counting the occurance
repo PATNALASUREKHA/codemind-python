@@ -1,0 +1,10 @@
+str = input()
+x = input()
+c = 0
+for i in str:
+    if i==x:
+        c += 1
+if c>0:
+    print(c)
+else:
+    print("-1")
